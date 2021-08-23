@@ -3,9 +3,38 @@ html{
     background-color: #aff;
 }
 
-.main-container{
+#main-container{
 
     width: 80%;
     margin: auto;
     padding: 1%; background-color: #fdf;
+}
+
+main{
+    width: 100%;
+}
+
+main section{
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: space-between;
+
+}
+
+main section article{
+    width: 47%;
+    background-color: #aff;
+    border-radius: 2%;
+    margin-bottom: 1%;
+}
+
+article img{
+    width: 100%;
+    border-radius: 2% 2%  0 0 ;
+}
+
+main section article div.text{
+
+    width: 80%;
+    margin: auto;
 }
