@@ -1,0 +1,11 @@
+
+html{
+    background-color: #aff;
+}
+
+.main-container{
+
+    width: 80%;
+    margin: auto;
+    padding: 1%; background-color: #fdf;
+}
