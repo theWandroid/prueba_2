@@ -288,6 +288,45 @@ width: 50%;
     align-self: center;
 }
 
+
+
+#contact main section div.container form{
+    width: 70%;
+    margin: auto;
+}
+
+
+#contact main section div.container form div {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact main section div.container form label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+    margin-right: 30px;
+}
+
+#contact main section div.container form textarea{
+    min-width: 150px;
+    max-width: 200px;
+    min-height: 50px;
+    max-height: 150px;
+}
+
+
+#contact main section div.container form button{
+    display: inline-block;
+    width: 100px;
+    margin: auto;
+}
+
+#contact main section div.container form .button{
+    width: 100px;
+    margin: auto;
+}
+
 @media screen and (max-width: 1500px) {
 
     nav a {
