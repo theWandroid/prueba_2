@@ -37,6 +37,7 @@ header{
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    overflow: hidden;
 }
 
 header h1{
@@ -53,8 +54,17 @@ header .company-name{
     padding: 2rem;
     background-color: #353849;
     box-shadow: 20px 20px #000;
+    position: relative;
+    animation: mymove ease-in-out 1s;
+
 }
     
+@keyframes mymove {
+    from {left: -1000px;
+    transform: rotate(-90deg);}
+    to {left: 0px;
+    transform: rotate(0);}
+  }
 
 nav {
     position: sticky;
