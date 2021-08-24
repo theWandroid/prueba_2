@@ -153,6 +153,7 @@ section#staff .member{
 
 #staff article:nth-child(2n){
 justify-items: flex-end;
+color: #dff;
 }
 
 #staff .member-description{
@@ -170,12 +171,27 @@ width: 50%;
 #staff .member-name h4{
     font-size: 1.5rem;
     text-align: right;
+    padding-bottom: 3rem;
 }
 
 #staff .member-description p{
-    width: 500px;
     font-size: 1.5rem;
     line-height: 1.7rem;
+    padding-bottom: 3rem;
+}
+
+#staff .member .member-description a{
+    display: inline-block;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    border: 1px solid #000;
+    color: rgb(11, 41, 8);
+    background-color: #4d862b;
+    font-weight: bold;
 }
 
 
@@ -190,10 +206,73 @@ footer{
     background-color: #8996af9a;
 }
 
+@media screen and (max-width: 1500px) {
+    #staff .photo-member{
+        width: 300px;
+        height: 300px;
+    }
+
+    #staff .member-name h3{
+        font-size: 3rem;
+    }
+    
+    #staff .member-name h4{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+    #staff .member-description p{
+      
+        font-size: 1rem;
+        line-height: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #staff .member .member-description a{
+        padding: 0.8rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #staff .photo-member{
+        width: 200px;
+        height: 200px;
+    }
+
+    #staff .member-name h3{
+        font-size: 2.5rem;
+    }
+    
+    #staff .member-name h4{
+        font-size: 1.1rem;
+        padding-bottom: 1.3rem;
+    }
+    
+    #staff .member-description p{
+        width: 80%;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    #staff .member .member-description a{
+        padding: 0.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+
 @media screen and (max-width: 820px) {
     main section article{
       width: 100%;
     }
+
+    section#staff .member{
+       flex-direction: column;
+    }
+
 
    nav label {
         box-sizing: border-box;
@@ -209,4 +288,9 @@ footer{
       nav input:checked ~ ul{
         display:block;
       }
+
+      #staff .photo-member{
+        width: 200px;
+        height: 200px;
+    }
 }
